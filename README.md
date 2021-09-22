@@ -1,7 +1,8 @@
 # Finance Planner API
 
 This is a Django backend for a finance planning app. It is set up to connect to a
-PaaS Azure SQL Server DB.
+PaaS Azure SQL Server DB. This API is intended to be used with a
+[UI Repo](https://github.com/jtclayt/finance_planner_app).
 
 
 ## Planned features:
