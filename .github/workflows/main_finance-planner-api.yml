@@ -17,10 +17,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
-    defaults:
-      run:
-        working-directory: ./api
-
     steps:
       - uses: actions/checkout@v2
 
@@ -41,9 +37,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: python-app
-          path: |
-            api/
-            !venv/
+          path: api/
 
   deploy:
     runs-on: ubuntu-latest
