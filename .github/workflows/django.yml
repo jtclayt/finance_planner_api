@@ -26,4 +26,10 @@ jobs:
         pip install -r requirements.txt
     - name: Run Tests
       run: |
-        python manage.py test
+        cd api
+        export SECRET_KEY=test
+        export DB_USER=test
+        export DB_PASSWORD=test
+        export DB_HOST=test
+        export DB_NAME=test
+        python manage.py test --settings api.test_settings
