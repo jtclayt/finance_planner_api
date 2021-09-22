@@ -23,3 +23,6 @@ to buy in each stock to meet distribution
 ### Other other stuff
 - I update this only intermittenly.
 - There is no logical order to what I work on. I'm just here to have fun.
+
+
+## Deployement
