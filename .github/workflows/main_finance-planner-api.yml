@@ -12,19 +12,17 @@ on:
 
 env:
   WEBAPP_NAME: finance-planner-api
+  SECRET_KEY: test
+  DB_USER: test
+  DB_PASSWORD: test
+  DB_HOST: test
+  DB_NAME: test
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-      env:
-        SECRET_KEY: test
-        DB_USER: test
-        DB_PASSWORD: test
-        DB_HOST: test
-        DB_NAME: test
-
       - uses: actions/checkout@v2
 
       - name: Set up Python version
