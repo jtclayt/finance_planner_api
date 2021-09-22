@@ -16,7 +16,7 @@ jobs:
       DB_HOST: test
       DB_NAME: test
 
-    default:
+    defaults:
       runs:
         working-directory: ./api
 
