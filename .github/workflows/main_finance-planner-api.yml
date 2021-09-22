@@ -55,12 +55,6 @@ jobs:
           name: python-app
           path: .
 
-      - name: Disable static collection and set migration command on App Service
-        uses: Azure/appservice-settings@v1
-        with:
-          app-name: ${{ env.WEBAPP_NAME }}
-          app-settings-json: ${{ secrets.APP_SETTINGS }}
-
       - name: 'Deploy to Azure Web App'
         uses: azure/webapps-deploy@v2
         id: deploy-to-webapp
