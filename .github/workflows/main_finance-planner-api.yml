@@ -17,6 +17,8 @@ env:
   DB_PASSWORD: test
   DB_HOST: test
   DB_NAME: test
+  DEBUG: False
+  ALLOWED_HOSTS: ''
 
 jobs:
   build:
